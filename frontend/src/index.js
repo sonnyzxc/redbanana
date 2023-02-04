@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
 import './index.css';
-import App from './App/App.js';
+import Login from './App/Login.js';
+import Lobby from './Lobby/Lobby.js';
 import reportWebVitals from './reportWebVitals';
+
+// function App() {
+//   return (
+//     <div className="wrapper">
+
+//     </div>
+
+//   )
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Lobby /> */}
+    <Login />
   </React.StrictMode>
 );
 
