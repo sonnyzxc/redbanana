@@ -39,5 +39,5 @@ New employees can be added through the admin page.
 
 The admin page is used to modify all tables.
 
-## Last Updated (5th February 2023)
+**Last Updated (5th February 2023)**
 
