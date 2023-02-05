@@ -20,6 +20,6 @@ from mainapp import views
 urlpatterns = [
     path('mainapp/', include('mainapp.urls')),
     path('admin/', admin.site.urls),
-    re_path(r'^api/employees/$', views.employees_list),
-    re_path(r'^api/employees/([0-9])$', views.employees_detail),
+    # re_path(r'^api/employees/$', views.employees_list),
+    # re_path(r'^api/employees/([0-9])$', views.employees_detail),
 ]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./login.css">
+        <title>Login</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+        <style>
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: relative;
+
+}
+
+.container input,
+.container a {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.container a {
+  background: #bca0dc;
+  color: white;
+}
+
+.container .placeholder {
+  position: absolute;
+  left: 12px;
+  bottom: 50%;
+  top: 22px;  
+  transform: translateY(-50%);
+  width: calc(100% - 24px);  
+  color: #aaa;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+        </style>
+
+      </head>
+      <body>
+    
+        <div class="container">
+        <form>
+            <div style="text-align:center" class="row">
+            <h2>Login</h2>          
+            <input type="text" name="username" placeholder="Username" required/>
+            <br></br>
+            <input type="password" name="password" placeholder="Password" required/>
+            <br></br>
+            <a class = "login" href="./lobby">Login</a>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

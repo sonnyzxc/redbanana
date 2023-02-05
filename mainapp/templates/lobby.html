@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+
+</html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+        body {
+            
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Roboto Flex', sans-serif; 
+            /* background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d32fc6156fb218b.png'); */
+        }
+        #parentdiv {
+            padding: 10%;
+            background-color: #eae4dd;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        .div2 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            background-color: #ffafcc;
+            border-radius: 100px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; 
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        .circle {
+            left: 40px;
+            top: 50px;
+            display: inline-block;
+            background-color: #ffafcc;
+            margin: 10%;
+            border-radius: 10%;
+            font-family: 'Roboto Flex', sans-serif;
+            float: left;
+        }
+
+        .circle-inner {
+            color: #101010;
+            display: table-cell;
+            vertical-align: middle; 
+            text-align: center;
+            text-decoration: none;
+            height: 50px;
+            width: 50px;  
+            font-size: 20px;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        .hide {
+            display: none;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        .hide:hover {
+            display: block;
+            color: black;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        body {
+            background-color: #eae4dd;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #rcorners1 {
+            border-radius: 25px;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            bottom: 20px;
+            background: #B7FFFA;
+            padding: 20px; 
+            width: 200px;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #rcorners2 {
+            border-radius: 25px;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            bottom: 20px;
+            background: #D3D0D4;
+            padding: 20px; 
+            width: 200px;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #name {
+            padding-left: 65px;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #commentName {
+            text-align: right;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #selfThumb {
+            text-align: right;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        * {
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        #idChan {
+            width: 20%;
+            float: left;
+            padding: 7%;
+            color: black;
+            font-weight: bold;
+        }
+        #circlediv {
+            margin: 0%;
+        }
+    </style>
+    <body>
+
+
+    <div style="display: flex; flex-direction: column; align-items: center;" style="background-image: url('../images/officebg.png');"> 
+        {% for employee in employees_list %}
+        <div class="hide">
+            <p>LOGIN TIME: 999999999999999999</p>
+        </div>
+            
+        {% endfor %}
+            </div>
+            <script>
+                let minutes = 0;
+                let seconds = 0;
+                function incrementStopwatch() {
+                    seconds++;
+                    if (seconds >= 60) {
+                    minutes++;
+                    seconds = 0;
+                    }
+                    let formattedMinutes = String(minutes).padStart(2, "0");
+                    let formattedSeconds = String(seconds).padStart(2, "0");
+                    document.getElementById("stopwatch").innerHTML = `${formattedMinutes}:${formattedSeconds}`;
+                }
+                setInterval(incrementStopwatch, 1000);
+            </script>
+        </div>
+        <!-- <div id="rcorners1"></div> -->
+        <div id="parentdiv"><div id="idChan"></div><div id="circlediv"></div></div>
+        <div id="rcorners2">
+            <div class="circle">
+                <p class="circle-inner">CYL</p>
+            </div>
+            <b id="name" style="width: fit-content;">
+                ChanYoung Lee
+            </b>
+            <div>
+                <p>
+                    Login time --------------- <span id="stopwatch">00:00</span></p>
+                </p>
+                <p>
+                    Lines of code ---------------- 27
+                </p>
+                <p>
+                    Successful commits ---------- 4
+                </p>
+                <b>
+                    Today's tasks:
+                </b>
+                <br><br>
+                <input type="checkbox">
+                <label for="vehicle3"> Finish toes.</label><br>
+                <input type="checkbox">
+                <label for="vehicle3"> Do Leo</label><br>
+                <br><br>
+                <b>
+                    Collegue comments:
+                </b>
+                <p style="margin-left: 25px;">
+                    Fast worker!
+                </p>
+                <p id="commentName">
+                    -Sonny Ku
+                </p>
+                <p style="margin-left: 25px;">
+                    Please comment code!
+                </p>
+                <p id="commentName">
+                    -Anonymous
+                </p>
+                <img src="/images/green-thumb.png"></img>
+            </div>
+        </div>   
+    </body>
+
+    <script>
+    function getRandomPastelColor() {
+        let r = Math.floor(Math.random() * (256 - 192) + 192);
+        let g = Math.floor(Math.random() * (256 - 192) + 192);
+        let b = Math.floor(Math.random() * (256 - 192) + 192);
+        return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+    }
+
+    circles(9)
+    
+    
+
+    function circles(n) {
+        var div = 360 / n;
+        var radius = 150;
+        var parentdiv = document.getElementById("circlediv");
+        var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
+        var offsetToChildCenter = 20;
+        var totalOffset = offsetToParentCenter - offsetToChildCenter;
+        for (var i = 1; i <= n; ++i) {
+        var childdiv = document.createElement('div');
+        var text = document.createElement("circle-text");
+        text.textContent = "GF";
+        text.className = "circle-inner";
+        childdiv.appendChild(text);
+        childdiv.className = "div2"
+        childdiv.style.backgroundColor = getRandomPastelColor();
+        childdiv.style.position = 'absolute';
+        var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+        var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+        childdiv.style.top = (y + totalOffset).toString() + "px";
+        childdiv.style.left = (x + totalOffset).toString() + "px";
+        parentdiv.appendChild(childdiv);
+        }
+    }    
+
+    const sample = {
+        "task1" : {
+            "task1.1" : "do something cool",
+            "task1.2" : {
+                "task1.2.1" : "ok"
+            }
+        },
+        "task2" : {
+            "task2.1" : "test",
+            "task.2.2" : "test2"
+        },
+        "task3" : "very simple"
+    }
+
+
+    function objToHtmlList(obj) {
+        if (obj instanceof Object) {
+            var ul = document.createElement('ul');
+            for (var child in obj) {
+                var li = document.createElement('li');
+                li.appendChild(document.createTextNode(child + ": "));
+                li.appendChild(objToHtmlList(obj[child]));
+                ul.appendChild(li);
+            }
+            return ul;
+        }
+        else {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(obj));
+            return li;
+        }
+    }
+
+    function displayTodo() {
+        document.getElementById("idChan").appendChild(objToHtmlList(sample));
+    }
+
+    displayTodo()
+
+    </script>
+            
+</html>
