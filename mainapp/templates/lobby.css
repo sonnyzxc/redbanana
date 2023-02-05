@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto Flex', sans-serif; 
+}
+#parentdiv {
+    padding: 10%;
+    background-color: #eae4dd;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.div2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #ffafcc;
+    border-radius: 100px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; 
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.circle {
+    left: 40px;
+    top: 50px;
+    display: inline-block;
+    background-color: #ffafcc;
+    margin: 10%;
+    border-radius: 10%;
+    font-family: 'Roboto Flex', sans-serif;
+    float: left;
+}
+
+.circle-inner {
+    color: #101010;
+    display: table-cell;
+    vertical-align: middle; 
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;  
+    font-size: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.hide {
+    display: none;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.hide:hover {
+    display: block;
+    color: black;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+    background-color: #eae4dd;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    bottom: 20px;
+    background: #B7FFFA;
+    padding: 20px; 
+    width: 200px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    bottom: 20px;
+    background: #D3D0D4;
+    padding: 20px; 
+    width: 200px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#name {
+    padding-left: 65px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#commentName {
+    text-align: right;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#selfThumb {
+    text-align: right;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+* {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#idChan {
+    width: 20%;
+    float: left;
+    padding: 7%;
+    color: black;
+    font-weight: bold;
+}
+#circlediv {
+    margin: 0%;
+}
