@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
 body {
     font-family: 'Roboto Flex', sans-serif; 
 }
@@ -19,10 +21,22 @@ body {
     font-family: 'Roboto Flex', sans-serif;
 }
 
+.div2:hover:after {
+    position: absolute;
+    width: 128px;
+    height: 48px;
+    background-color: #ffafcc;
+    border-radius: 100px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; 
+    font-family: 'Roboto Flex', sans-serif;
+    content: "Stats: Time Online: 53m, Praises: 4";
+}
+
 .circle {
     left: 40px;
     top: 50px;
-    display: inline-block;
     background-color: #ffafcc;
     margin: 10%;
     border-radius: 10%;
@@ -36,9 +50,8 @@ body {
     vertical-align: middle; 
     text-align: center;
     text-decoration: none;
-    height: 50px;
-    width: 50px;  
     font-size: 20px;
+
     font-family: 'Roboto Flex', sans-serif;
 }
 
@@ -60,10 +73,6 @@ body {
 
 #rcorners1 {
     border-radius: 25px;
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    bottom: 20px;
     background: #B7FFFA;
     padding: 20px; 
     width: 200px;
@@ -72,19 +81,21 @@ body {
 
 #rcorners2 {
     border-radius: 25px;
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    bottom: 20px;
     background: #D3D0D4;
     padding: 20px; 
     width: 200px;
     font-family: 'Roboto Flex', sans-serif;
+    float: right;
+    margin: 2%;
 }
 
 #name {
     padding-left: 65px;
     font-family: 'Roboto Flex', sans-serif;
+}
+
+li {
+    margin: 3%;
 }
 
 #commentName {
@@ -108,6 +119,7 @@ body {
     color: black;
     font-weight: bold;
 }
+
 #circlediv {
-    margin: 0%;
+    margin: auto;
 }

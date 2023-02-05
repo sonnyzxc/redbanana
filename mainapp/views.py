@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'login.html', {})
 
 def lobby(request):
-    return render(request, 'lobby.html', {'employees_list': Employees.objects.all()})
+    return render(request, 'lobby.html', {'employees_list': Employees.objects.all(), 'cur_employee': Employees.objects.get(employee_name = "Victor Kang")})
 
 # @api_view(['GET', 'POST'])
 # def employees_list(request):
@@ -48,6 +48,11 @@ def lobby(request):
 
 
 def getStatus(request):
-    emp = Employees.objects.get()
-    print(list(emp.values()))
-    return JsonResponse({"status":list(emp.values())})
+    # print("hello")
+    try:
+        emp = Employees.objects.filter()
+        data = {"status": list(emp.values())}
+    except Employees.DoesNotExist:
+        data = {"error": "Employee not found."}
+    return JsonResponse(data)
+
