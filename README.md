@@ -22,8 +22,8 @@ Then go to the browser and enter the url **http://127.0.0.1:8000/**
 The login page is common for admins and employees
 
 Example usernames:  
-student- 'admin'  
-teacher- '123'  
+username: admin
+password: 123  
 
 You can access the django admin page at **http://127.0.0.1:8000/admin** and login with above username and password.
 
