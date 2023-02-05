@@ -48,7 +48,6 @@ def lobby(request):
 
 
 def getStatus(request):
-    # print("hello")
     try:
         emp = Employees.objects.filter()
         data = {"status": list(emp.values())}

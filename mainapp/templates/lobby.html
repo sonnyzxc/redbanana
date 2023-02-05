@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <!-- <head>
-        <link rel="stylesheet" href='/Users/sonnyk/Desktop/redbanana/mainapp/templates/lobby.css' type="text/css">    
-    </head> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto Flex', sans-serif; 
-        }
-        
         #parentdiv {
-            padding: 10%;
             background-color: #eae4dd;
             font-family: 'Roboto Flex', sans-serif;
+            margin: 0px;
+            padding: 0px;
         }
 
 
@@ -24,14 +18,14 @@
             border-radius: 50%;
             display: table-cell;
             text-align: center;
-            vertical-align: middle; 
+            vertical-align: bottom; 
             font-family: 'Roboto Flex', sans-serif;
         }
 
         .div2:hover:after {
             position: absolute;
-            width: 128px;
-            height: 60px;
+            width: 100px;
+            height: 80px;
             background-color: #ffffff;
             border-radius: 10px;
             display: table-cell;
@@ -60,40 +54,16 @@
             font-family: 'Roboto Flex', sans-serif;
             color: #101010;
             font-size: 20px;
-            
-
-            /* font-family: 'Roboto Flex', sans-serif;
-            width: 48px;
-            height: 48px;
-            /* background-color: #77c6fc; */
-            /* background-color: #ffafcc; 
-            border-radius: 100px;
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle; 
-            font-family: 'Roboto Flex', sans-serif; */
         }
 
-        .hide {
-            display: none;
-            font-family: 'Roboto Flex', sans-serif;
-        }
-
-        .hide:hover {
-            display: block;
-            color: black;
-            font-family: 'Roboto Flex', sans-serif;
-        }
 
         body {
-            /* background-color: #494949; */
+            font-family: 'Roboto Flex', sans-serif; 
             background-color: #eae4dd;
-            font-family: 'Roboto Flex', sans-serif;
         }
 
         #rcorners1 {
             border-radius: 25px;
-            /* background: #477797; */
             background: #DAD0D0;
             padding: 20px; 
             width: 200px;
@@ -104,7 +74,6 @@
 
         #rcorners2 {
             border-radius: 25px;
-            /* background: #477797; */
             background: #DAD0D0;
             padding: 20px; 
             width: 200px;
@@ -127,11 +96,6 @@
             font-family: 'Roboto Flex', sans-serif;
         }
 
-        #selfThumb {
-            text-align: right;
-            font-family: 'Roboto Flex', sans-serif;
-        }
-
         * {
             font-family: 'Roboto Flex', sans-serif;
         }
@@ -147,118 +111,35 @@
             margin: auto;
         }
 
-        #circleaaa {
-            width: 48px;
-            height: 48px;
-            /* background-color: #77c6fc; */
-            background-color: #ffafcc; 
-            border-radius: 100%;
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle; 
-            font-family: 'Roboto Flex', sans-serif;
+        .topnav {
+        background-color: #555;
+        overflow: hidden;
         }
-        /* The container */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+        font-size: 17px;
+        }
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-  text-align: right;
-}
+        /* Add a color to the active/current link */
+        .topnav a.active {
+        background-color: #bca0dc;
+        color: white;
+        text-align: right;
+        }
     </style>
     <body>
-        <div class="topnav">
-            <a href="https://www.imperial.ac.uk/people/n.wu">Contact</a>
-            <a href="#about">About</a>
-            <a class="active" href="../">Logout</a>
-          </div>
         <script>
             let minutes = 0;
             let seconds = 0;
@@ -275,6 +156,11 @@
             setInterval(incrementStopwatch, 1000);
         </script>
     </div>
+    <div class="topnav">
+        <a href="https://www.imperial.ac.uk/    ">Contact</a>
+        <a href="#about">About</a>
+        <a class="active" href="../">Logout</a>
+      </div>
         <div id="rcorners1">
         <div id="idChan"></div>
         </div>
@@ -282,7 +168,7 @@
         <div id="rcorners2">
             <b id="name" style="width: fit-content;">
                 <h2><b id="name" style="text-align:center;">
-                    Tommy
+                    Tommy Kang
                 </b></h2>
                 <hr>  
                 <div>   
@@ -346,9 +232,9 @@
 
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>        function getRandomPastelColor() {
-            let r = Math.floor(Math.random() * (256 - 192) + 192);
-            let g = Math.floor(Math.random() * (256 - 192) + 192);
-            let b = Math.floor(Math.random() * (256 - 192) + 192);
+            let r = Math.floor(Math.random() * (256 - 128) + 128);
+            let g = Math.floor(Math.random() * (256 - 128) + 128);
+            let b = Math.floor(Math.random() * (256 - 128) + 128);
             return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
         }
 
@@ -382,7 +268,7 @@
                 // childdiv.style.position = 'absolute';
                 childdiv.style.whiteSpace = "pre";
                 text.style.textAlign = "center";
-                childdiv.title = "Time:" + list[i].online_time + "\nLines: " + list[i].lines;
+                childdiv.title = "Time:" + list[i].online_time + "\nLines: " + list[i].lines + "\nCommits: " + list[i].commits + "\nPraises: " + list[i].praises;
                 childdiv.className = "div2";
                 childdiv.style.textAlign = "center";
                 childdiv.appendChild(text);
@@ -392,7 +278,7 @@
                 childdiv.style.position = 'absolute';
                 var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
                 var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-                var newx = Math.cos(angle) * x - Math.sin(angle) * y
+                var newx = Math.cos(angle) * x - Math.sin(angle) * y - 20
                 var newy = Math.sin(angle) * x + Math.cos(angle) * y - 350
                 childdiv.style.top = (newy + totalOffset).toString() + "px";
                 childdiv.style.left = (newx + totalOffset).toString() + "px";
@@ -402,7 +288,7 @@
 
         const sample = {
             "task1" : {
-                "task1.1" : "do something cool",
+                "task1.1" : "haskell",
                 "task1.2" : {
                     "task1.2.1" : "leaf"
                 }
