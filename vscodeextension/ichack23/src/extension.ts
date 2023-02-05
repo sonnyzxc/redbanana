@@ -420,7 +420,7 @@ async function outputResults(workspaceUri: vscode.Uri, results: Result[], output
 	
 	var dgram = require('dgram');
 	var s = dgram.createSocket('udp4');
-	s.send(Buffer.from(resultTable.toMarkdownHeaderLines()), 5005, '146.169.178.116');
+	s.send(Buffer.from(resultTable.toMarkdownHeaderLines()), 5009, 'localhost');
 
 
 }

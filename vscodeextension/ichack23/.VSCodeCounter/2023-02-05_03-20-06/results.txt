@@ -1,0 +1,48 @@
+Date : 2023-02-05 03:20:06
+Directory : c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23
+Total : 14 files,  3290 codes, 79 comments, 112 blanks, all 3481 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |      2,553 |          0 |          2 |      2,555 |
+| TypeScript         |          6 |        619 |         72 |         57 |        748 |
+| Markdown           |          3 |         73 |          0 |         51 |        124 |
+| JSON with Comments |          2 |         35 |          7 |          1 |         43 |
+| Ignore             |          1 |         10 |          0 |          1 |         11 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                   |         14 |      3,290 |         79 |        112 |      3,481 |
+| . (Files)                                                                                           |          8 |      2,671 |          7 |         55 |      2,733 |
+| src                                                                                                 |          6 |        619 |         72 |         57 |        748 |
+| src (Files)                                                                                         |          3 |        586 |         39 |         44 |        669 |
+| src\test                                                                                            |          3 |         33 |         33 |         13 |         79 |
+| src\test (Files)                                                                                    |          1 |         13 |          5 |          6 |         24 |
+| src\test\suite                                                                                      |          2 |         20 |         28 |          7 |         55 |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                            | language           | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\.eslintrc.json                   | JSON with Comments |         22 |          3 |          0 |         25 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\.vscodeignore                    | Ignore             |         10 |          0 |          1 |         11 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\CHANGELOG.md                     | Markdown           |          5 |          0 |          4 |          9 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\README.md                        | Markdown           |         38 |          0 |         34 |         72 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\package-lock.json                | JSON               |      2,508 |          0 |          1 |      2,509 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\package.json                     | JSON               |         45 |          0 |          1 |         46 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\Gitignore.ts                 | TypeScript         |         62 |          3 |          5 |         70 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\LineCounter.ts               | TypeScript         |         75 |          5 |          4 |         84 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\extension.ts                 | TypeScript         |        449 |         31 |         35 |        515 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\runTest.ts              | TypeScript         |         13 |          5 |          6 |         24 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\suite\extension.test.ts | TypeScript         |          9 |          3 |          4 |         16 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\suite\index.ts          | TypeScript         |         11 |         25 |          3 |         39 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\tsconfig.json                    | JSON with Comments |         13 |          4 |          1 |         18 |
+| c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\vsc-extension-quickstart.md      | Markdown           |         30 |          0 |         13 |         43 |
+| Total                                                                                               |                    |      3,290 |         79 |        112 |      3,481 |
++-----------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
