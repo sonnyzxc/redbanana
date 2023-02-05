@@ -1,4 +1,4 @@
-# Verchuel (ICHack 23)
+# Verchual (ICHack 23)
 ### *by ChanYoung Lee, Leo Iwasaki, Yejun (Tommy) Kang, Kritik Pant, Sangho (Victor) Kang & Sonny Ku*
 
 
