@@ -2,6 +2,7 @@
 ### *by ChanYoung Lee, Leo Iwasaki, Yejun (Tommy) Kang, Kritik Pant, Sangho Kang & Sonny Ku*
 
 
+### [link to write up](./writeup.md)
 ---
 
 
