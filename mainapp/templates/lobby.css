@@ -31,7 +31,8 @@ body {
     text-align: center;
     vertical-align: middle; 
     font-family: 'Roboto Flex', sans-serif;
-    content: "Stats: Time Online: 53m, Praises: 4";
+    content: attr(title);
+    /* content: "Stats: Time Online: 53m, Praises: 4"; */
 }
 
 .circle {
@@ -86,7 +87,7 @@ body {
     width: 200px;
     font-family: 'Roboto Flex', sans-serif;
     float: right;
-    margin: 2%;
+    margin: 0%;
 }
 
 #name {

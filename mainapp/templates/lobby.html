@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-    <head>
-        <link rel="stylesheet" href='mainapp/templates/lobby.css' type="text/css">    
-    </head>
+    <!-- <head>
+        <link rel="stylesheet" href='/Users/sonnyk/Desktop/redbanana/mainapp/templates/lobby.css' type="text/css">    
+    </head> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto Flex', sans-serif; 
         }
+        
         #parentdiv {
             padding: 10%;
             background-color: #eae4dd;
             font-family: 'Roboto Flex', sans-serif;
         }
 
+
         .div2 {
             position: absolute;
-            width: 48px;
-            height: 48px;
+            width: 80px;
+            height: 80px;
             background-color: #ffafcc;
-            border-radius: 100px;
+            border-radius: 50%;
             display: table-cell;
             text-align: center;
             vertical-align: middle; 
@@ -29,20 +31,20 @@
         .div2:hover:after {
             position: absolute;
             width: 128px;
-            height: 48px;
+            height: 60px;
             background-color: #ffafcc;
             border-radius: 100px;
             display: table-cell;
             text-align: center;
             vertical-align: middle; 
             font-family: 'Roboto Flex', sans-serif;
-            content: "Stats: Time Online: 53m, Praises: 4";
+            content: attr(title);
         }
 
         .circle {
-            left: 40px;
+            left: 50px;
             top: 50px;
-            background-color: #ffafcc;
+            background-color: #494949;
             margin: 10%;
             border-radius: 10%;
             font-family: 'Roboto Flex', sans-serif;
@@ -50,16 +52,25 @@
         }
 
         .circle-inner {
-            left: 40px;
-            top: 50px;
-            color: #101010;
             display: table-cell;
-            vertical-align: middle; 
             text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-
+            vertical-align: middle; 
+            border-radius: 100%;
             font-family: 'Roboto Flex', sans-serif;
+            color: #101010;
+            font-size: 20px;
+            
+
+            /* font-family: 'Roboto Flex', sans-serif;
+            width: 48px;
+            height: 48px;
+            /* background-color: #77c6fc; */
+            /* background-color: #ffafcc; 
+            border-radius: 100px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; 
+            font-family: 'Roboto Flex', sans-serif; */
         }
 
         .hide {
@@ -74,30 +85,35 @@
         }
 
         body {
+            /* background-color: #494949; */
             background-color: #eae4dd;
             font-family: 'Roboto Flex', sans-serif;
         }
 
         #rcorners1 {
             border-radius: 25px;
-            background: #B7FFFA;
+            /* background: #477797; */
+            background: #DAD0D0;
             padding: 20px; 
             width: 200px;
             font-family: 'Roboto Flex', sans-serif;
+            float: left;
+            margin: 2%;
         }
 
         #rcorners2 {
             border-radius: 25px;
-            background: #D3D0D4;
+            /* background: #477797; */
+            background: #DAD0D0;
             padding: 20px; 
             width: 200px;
             font-family: 'Roboto Flex', sans-serif;
             float: right;
             margin: 2%;
+            text-align: center;
         }
 
         #name {
-            padding-left: 65px;
             font-family: 'Roboto Flex', sans-serif;
         }
 
@@ -120,15 +136,94 @@
         }
 
         #idChan {
-            width: 20%;
             float: left;
-            padding: 7%;
+            padding: 0%;
             color: black;
             font-weight: bold;
+            width: 300;
         }
         #circlediv {
             margin: auto;
         }
+
+        #circleaaa {
+            width: 48px;
+            height: 48px;
+            /* background-color: #77c6fc; */
+            background-color: #ffafcc; 
+            border-radius: 100%;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; 
+            font-family: 'Roboto Flex', sans-serif;
+        }
+        /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
     </style>
     <body>
         <script>
@@ -147,37 +242,37 @@
             setInterval(incrementStopwatch, 1000);
         </script>
     </div>
-        <!-- <div id="rcorners1"></div> -->
-        <div id="parentdiv"><div id="idChan"></div><div id="circlediv"></div></div>
+        <div id="rcorners1">
+        <div id="idChan"></div>
+        </div>
+        <div id="circlediv"></div>
         <div id="rcorners2">
-            <div class="circle">
-                <p class="circle-inner">CYL</p>
-            </div>
             <b id="name" style="width: fit-content;">
-                ChanYoung Lee
-            </b>
-            <hr>  
-            <div>
-                <p>
-                    Login time --------------- <span id="stopwatch">00:00</span>
-                </p>
-                <p>
-                    Login time --------------- {{cur_employee.online_time}}
-                </p>
-                <p>
-                    Lines of code ---------------- {{cur_employee.lines}}
-                </p>
-                <p>
-                    -Insert like icon- ---------- {{cur_employee.praises}}
-                </p>
+                <h2><b id="name" style="text-align:center;">
+                    Tommy
+                </b></h2>
+                <hr>  
+                <div>   
+                    <div>
+
+                        <p>
+                            Login Time&nbsp;&nbsp;&nbsp;&nbsp;--------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="stopwatch">00:00</span>
+                        </p>
+                        <p>
+                            Code Lines&nbsp;&nbsp;&nbsp;&nbsp;--------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{cur_employee.lines}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </p>
+                        <p>
+                            Praises&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -------- &nbsp;&nbsp;&nbsp;&nbsp;{{cur_employee.praises}}
+                        </p>
+                    </div>
                 <hr>  
                 <b>
-                    Today's tasks:
+                    <h3>Today's Tasks:</h3>
                 </b>
+                
                 <input type="text" id="new-todo" placeholder="Add a new task">
                 <button id="add-todo">Add</button>
-                <ul id="todo-list">
-                </ul>
+                <ul id="todo-list" style="list-style-type: none; padding: 0 0 0 0; text-align: left;"></ul>
                 <hr>  
                 <script>
                   const todoList = document.getElementById("todo-list");
@@ -198,21 +293,20 @@
                 </script>
             
                 <b>
-                    Collegue comments:
+                    <h3>Collegue Comments:</h3>
                 </b>
-                <p style="margin-left: 25px;">
+                <p style="margin-left: 25px; text-align: left;">
                     Fast worker!
                 </p>
                 <p id="commentName">
-                    -Sonny Ku
+                    -&nbsp;Sonny Ku
                 </p>
-                <p style="margin-left: 25px;">
+                <p style="margin-left: 25px; text-align: left;">
                     Please comment code!
                 </p>
                 <p id="commentName">
-                    -Anonymous
+                    -&nbsp;Anonymous
                 </p>
-                <!-- <img src="../images/green-thumb.png"></img> -->
             </div>
         </div>   
     </body>
@@ -225,32 +319,44 @@
             return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
         }
 
-        circles(9)
+        function getColorArray(n) {
+            var c = []
+            for(i = 0; i < n; i++) {
+                c.push(getRandomPastelColor())
+            }
+            return c
+        }
 
-        
+        const colors = getColorArray(9)
+        const angle = Math.random() * Math.PI * 2
 
-        function circles(n) {
+    
+        function circles(n, list) {
             var div = 360 / n;
             var radius = 150;
             var parentdiv = document.getElementById("circlediv");
             var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
             var offsetToChildCenter = 20;
             var totalOffset = offsetToParentCenter - offsetToChildCenter;
-            for (var i = 1; i <= n; ++i) {
-            var childdiv = document.createElement('div');
-            var text = document.createElement("circle-text");
-            text.textContent = "GF";
-            text.className = "circle-inner";
-            childdiv.appendChild(text);
-            childdiv.className = "div2";
-        // childdiv.onmouseover();
-            childdiv.style.backgroundColor = getRandomPastelColor();
-            childdiv.style.position = 'absolute';
-            var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
-            var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-            childdiv.style.top = (y + totalOffset).toString() + "px";
-            childdiv.style.left = (x + totalOffset).toString() + "px";
-            parentdiv.appendChild(childdiv);
+            for (var i = 0; i < n; ++i) {
+                var childdiv = document.createElement('div');
+                var text = document.createElement("circle-text");
+                text.textContent = list[i].employee_name;
+                text.className = "circle-inner";
+                childdiv.title = "Time:" + list[i].online_time + "\nLines: " + list[i].lines;
+                childdiv.className = "div2";
+                childdiv.appendChild(text);
+            // childdiv.onmouseover();
+                // childdiv.className = "div2:hover:after";
+                childdiv.style.backgroundColor = colors[i];
+                childdiv.style.position = 'absolute';
+                var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+                var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+                var newx = Math.cos(angle) * x - Math.sin(angle) * y
+                var newy = Math.sin(angle) * x + Math.cos(angle) * y - 350
+                childdiv.style.top = (newy + totalOffset).toString() + "px";
+                childdiv.style.left = (newx + totalOffset).toString() + "px";
+                parentdiv.appendChild(childdiv);
             }
         }    
 
@@ -258,11 +364,11 @@
             "task1" : {
                 "task1.1" : "do something cool",
                 "task1.2" : {
-                    "task1.2.1" : "ok"
+                    "task1.2.1" : "leaf"
                 }
             },
             "task2" : {
-                "task2.1" : "test",
+                "task2.1" : "crunchy",
                 "task.2.2" : "test2"
             },
             "task3" : "very simple"
@@ -274,8 +380,11 @@
                 var ul = document.createElement('ul');
                 for (var child in obj) {
                     var li = document.createElement('li');
+                    var input = document.createElement('input');
+                    input.type = "checkbox";
                     li.appendChild(document.createTextNode(child + ": "));
                     li.appendChild(objToHtmlList(obj[child]));
+                    ul.appendChild(input);
                     ul.appendChild(li);
                 }
                 return ul;
@@ -283,6 +392,9 @@
             else {
                 var li = document.createElement('ul');
                 li.appendChild(document.createTextNode(obj));
+                var input = document.createElement('input');
+                input.type = "checkbox";
+                li.appendChild(input);
                 return li;
             }
         }
@@ -295,24 +407,29 @@
 
         $(document).ready(function(){
         setInterval(function(){
+            document.getElementById("circlediv").empty;
             $.ajax({
                 type: 'GET',
                 url : "/getStatus",
                 success: function(response){
-                    console.log(response.status[0]);
-                    // $("#display").empty();
-                    // for (var key in response.messages)
+                    console.log(response.status);
+                    circles(response.status.length, response.status)
+    
+                    // $("#user-status").empty();
+                    // for (var employee in response.status)
                     // {
-                    //     var temp="<div class='container darker'><b>"+response.messages[key].user+"</b><p>"+response.messages[key].value+"</p><span class='time-left'>"+response.messages[key].date+"</span></div>";
-                    //     $("#display").append(temp);
+                    //     console.log(response.status[employee])
+                    //     // var temp="<div><b>"+response.status[employee].employee_name+"</b><p>"+response.status[employee].online_time+"</p><p>"+response.status[employee].lines+"</p></div>";
+                    //     // $("#user-status").append(temp);
                     // }
                 },
                 error: function(response){
                     // alert('An error occured')
                 }
             });
-        },2000);
+        },1000);
         })
-    </script>
-            
+
+
+    </script>     
 </html>
