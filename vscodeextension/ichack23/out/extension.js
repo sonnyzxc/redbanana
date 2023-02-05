@@ -376,7 +376,7 @@ async function outputResults(workspaceUri, results, outputDirUri, conf) {
     var client = dgram.createSocket('udp4');
     var dgram = require('dgram');
     var s = dgram.createSocket('udp4');
-    s.send(Buffer.from(resultTable.toMarkdownHeaderLines()), 5005, 'localhost');
+    s.send(Buffer.from(resultTable.toMarkdownHeaderLines()), 5009, 'localhost');
 }
 class Result {
     get total() {

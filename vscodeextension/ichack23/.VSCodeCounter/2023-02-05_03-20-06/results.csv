@@ -1,0 +1,16 @@
+"filename", "language", "Ignore", "JSON with Comments", "JSON", "Markdown", "TypeScript", "comment", "blank", "total"
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\.eslintrc.json", "JSON with Comments", 0, 22, 0, 0, 0, 3, 0, 25
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\.vscodeignore", "Ignore", 10, 0, 0, 0, 0, 0, 1, 11
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\CHANGELOG.md", "Markdown", 0, 0, 0, 5, 0, 0, 4, 9
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\README.md", "Markdown", 0, 0, 0, 38, 0, 0, 34, 72
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\package-lock.json", "JSON", 0, 0, 2508, 0, 0, 0, 1, 2509
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\package.json", "JSON", 0, 0, 45, 0, 0, 0, 1, 46
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\Gitignore.ts", "TypeScript", 0, 0, 0, 0, 62, 3, 5, 70
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\LineCounter.ts", "TypeScript", 0, 0, 0, 0, 75, 5, 4, 84
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\extension.ts", "TypeScript", 0, 0, 0, 0, 449, 31, 35, 515
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\runTest.ts", "TypeScript", 0, 0, 0, 0, 13, 5, 6, 24
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\suite\extension.test.ts", "TypeScript", 0, 0, 0, 0, 9, 3, 4, 16
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\src\test\suite\index.ts", "TypeScript", 0, 0, 0, 0, 11, 25, 3, 39
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\tsconfig.json", "JSON with Comments", 0, 13, 0, 0, 0, 4, 1, 18
+"c:\Users\kriti\Documents\ICHack\redbanana\vscodeextension\ichack23\vsc-extension-quickstart.md", "Markdown", 0, 0, 0, 30, 0, 0, 13, 43
+"Total", "-", 10, 35, 2553, 73, 619, 79, 112, 3481
